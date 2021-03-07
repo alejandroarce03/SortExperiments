@@ -1,0 +1,10 @@
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\bin\Debug\SortExperiments.exe.config
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\bin\Debug\SortExperiments.exe
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\bin\Debug\SortExperiments.pdb
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\obj\Debug\SortExperiments.csprojAssemblyReference.cache
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\obj\Debug\SortExperiments.Properties.Resources.resources
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\obj\Debug\SortExperiments.UI.Interface.resources
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\obj\Debug\SortExperiments.csproj.GenerateResource.cache
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\obj\Debug\SortExperiments.csproj.CoreCompileInputs.cache
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\obj\Debug\SortExperiments.exe
+C:\Users\Aspire F 15\Desktop\SortExperiments\SortExperiments\SortExperiments\obj\Debug\SortExperiments.pdb
