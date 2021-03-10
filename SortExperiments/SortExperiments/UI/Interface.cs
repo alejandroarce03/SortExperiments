@@ -45,7 +45,8 @@ namespace SortExperiments.UI
             var random = new Random(seed);
             var value = 0;
             int prev = -1;
-
+            int i1 = 0, i2 = 0, i3 = 0, i4 = 0, i5 = 0, i6 = 0;
+            bool t = false;
             while (repetition <= 100)
             {
                 prev = value;
@@ -54,6 +55,46 @@ namespace SortExperiments.UI
                 while (prev == value)
                 {
                     value = random.Next(1, 6);
+
+                    switch (value)
+                    {
+                        case 1:
+                            if (i1 < 100)
+                                i1++;
+                            else
+                                t = true;
+                            break;
+                        case 2:
+                            if (i2 < 100)
+                                i2++;
+                            else
+                                t = true;
+                            break;
+                        case 3:
+                            if (i3 < 100)
+                                i3++;
+                            else
+                                t = true;
+                            break;
+                        case 4:
+                            if (i4 < 100)
+                                i4++;
+                            else
+                                t = true;
+                            break;
+                        case 5:
+                            if (i5 < 100)
+                                i5++;
+                            else
+                                t = true;
+                            break;
+                        case 6:
+                            if (i6 < 100)
+                                i6++;
+                            else
+                                t = true;
+                            break;
+                    }
                     
                 }
                 

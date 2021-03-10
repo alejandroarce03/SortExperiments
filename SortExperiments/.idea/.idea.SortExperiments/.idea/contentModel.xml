@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Alexander\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Alexander\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_SortExperiments.-1794956974.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Alexander\Desktop\sortExperiment\SortExperiments\SortExperiments" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SortExperiments" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Model" t="Include">
+          <e p="Experiment.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="SortExperiments.csproj" t="IncludeRecursive" />
+        <e p="UI" t="Include">
+          <e p="Interface.cs" t="Include" />
+          <e p="Interface.Designer.cs" t="Include" />
+          <e p="Interface.resx" t="Include" />
+          <e p="Program.cs" t="Include" />
+        </e>
+      </e>
+      <e p="SortExperiments.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

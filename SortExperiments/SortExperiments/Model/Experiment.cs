@@ -8,7 +8,8 @@ namespace SortExperiments.Model
 {
     class Experiment
     {
-        
+        public Experiment() { 
+        }
 
         public int[] CreateArray(long size)
         {
