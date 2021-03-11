@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SortExperiments.Model
 {
-    class Experiment
+    public class Experiment
     {
         public Experiment() { 
         }
 
-        public int[] CreateArray(long size)
+        public int[] CreateRandomArray (long size)
         {
             
             Random rd = new Random();
@@ -24,6 +24,14 @@ namespace SortExperiments.Model
             }
             return array;
         }
+
+        public int[] CreateAscendentArray(int [] array)
+        {
+            Comparison<int> comparator = new Comparison<int>((number1, number2) => number1.CompareTo(number2));
+            Array.Sort<int>(array, comparator);
+            return array;
+        }
+
 
         public int[] MergeSort(int[] array)
         {

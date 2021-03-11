@@ -25,8 +25,8 @@ namespace SortExperiments.UI
             dt = new DataTable();
             CreateTable();
             CreateExperiment();
-            
-            
+
+
         }
 
         public void CreateTable()
@@ -45,140 +45,241 @@ namespace SortExperiments.UI
             var random = new Random(seed);
             var value = 0;
             int prev = -1;
-            int i1 = 0, i2 = 0, i3 = 0, i4 = 0, i5 = 0, i6 = 0;
-            bool t = false;
-            while (repetition <= 100)
+            int[] count = new int[12];
+
+            while (repetition <= 1200)
             {
                 prev = value;
-                value = random.Next(1, 6);
+                value = random.Next(1, 12);
 
                 while (prev == value)
                 {
-                    value = random.Next(1, 6);
-
-                    switch (value)
-                    {
-                        case 1:
-                            if (i1 < 100)
-                                i1++;
-                            else
-                                t = true;
-                            break;
-                        case 2:
-                            if (i2 < 100)
-                                i2++;
-                            else
-                                t = true;
-                            break;
-                        case 3:
-                            if (i3 < 100)
-                                i3++;
-                            else
-                                t = true;
-                            break;
-                        case 4:
-                            if (i4 < 100)
-                                i4++;
-                            else
-                                t = true;
-                            break;
-                        case 5:
-                            if (i5 < 100)
-                                i5++;
-                            else
-                                t = true;
-                            break;
-                        case 6:
-                            if (i6 < 100)
-                                i6++;
-                            else
-                                t = true;
-                            break;
-                    }
-                    
+                    value = random.Next(1, 12);
                 }
-                
-                Cases(value);
-                repetition++;
+
+                switch (value)
+                {
+                    case 1:
+                        if (count[0] < 100)
+                        {
+                            count[0]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 2:
+                        if (count[1] < 100)
+                        {
+                            count[1]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 3:
+                        if (count[2] < 100)
+                        {
+                            count[2]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 4:
+                        if (count[3] < 100)
+                        {
+                            count[3]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 5:
+                        if (count[4] < 100)
+                        {
+                            count[4]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 6:
+                        if (count[5] < 100)
+                        {
+                            count[5]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 7:
+                        if (count[6] < 100)
+                        {
+                            count[6]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 8:
+                        if (count[7] < 100)
+                        {
+                            count[7]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 9:
+                        if (count[8] < 100)
+                        {
+                            count[8]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 10:
+                        if (count[9] < 100)
+                        {
+                            count[9]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 11:
+                        if (count[10] < 100)
+                        {
+                            count[10]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                    case 12:
+                        if (count[11] < 100)
+                        {
+                            count[11]++;
+                            Cases(value);
+                            repetition++;
+                        }
+                        break;
+
+                }
             }
-           
         }
 
         public void Cases(int value)
         {
             int[] tmp;
-
+            Stopwatch time = new Stopwatch();
+            time.Start();
+            var t = 0.0;
             switch (value)
             {
 
                 case 1:
-                    Stopwatch time = new Stopwatch();
-                    time.Start();
-                    tmp = ex.CreateArray(10);
+                    tmp = ex.CreateRandomArray(10);
                     ex.MergeSort(tmp);
                     time.Stop();
-                    var t = time.Elapsed.TotalMilliseconds;
+                    t = time.Elapsed.TotalMilliseconds;
                     dt.Rows.Add("1","1","1", t);
-
                     break;
 
                 case 2:
-
-                    Stopwatch time2 = new Stopwatch();
-                    time2.Start();
-                    tmp = ex.CreateArray(100);
+                    tmp = ex.CreateRandomArray(100);
                     ex.MergeSort(tmp);
-                    time2.Stop();
-                    var t2 = time2.Elapsed.TotalMilliseconds;
-                    dt.Rows.Add("1", "1", "2", t2);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("1", "1", "2", t);
                     break;
 
                 case 3:
-                    Stopwatch time3 = new Stopwatch();
-                    time3.Start();
-                    tmp = ex.CreateArray(1000);
+                    tmp = ex.CreateRandomArray(1000);
                     ex.MergeSort(tmp);
-                    time3.Stop();
-                    var t3 = time3.Elapsed.TotalMilliseconds;
-                    dt.Rows.Add("1", "1", "3", t3);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("1", "1", "3", t);
                     break;
 
                 case 4:
-                    Stopwatch time4 = new Stopwatch();
-                    time4.Start();
-                    tmp = ex.CreateArray(10);
+                    tmp = ex.CreateRandomArray(10);
                     ex.InsertionSort(tmp);
-                    time4.Stop();
-                    var t4 = time4.Elapsed.TotalMilliseconds;
-                    dt.Rows.Add("2", "1", "1", t4);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("1", "2", "1", t);
                     break;
 
                 case 5:
-                    Stopwatch time5 = new Stopwatch();
-                    time5.Start();
-                    tmp = ex.CreateArray(100);
+                    tmp = ex.CreateRandomArray(100);
                     ex.InsertionSort(tmp);
-                    time5.Stop();
-                    var t5 = time5.Elapsed.TotalMilliseconds;
-                    dt.Rows.Add("2", "1", "2", t5);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("1", "2", "2", t);
                     break;
 
                 case 6:
-                    Stopwatch time6 = new Stopwatch();
-                    time6.Start();
-                    tmp = ex.CreateArray(1000);
+                    tmp = ex.CreateRandomArray(1000);
                     ex.InsertionSort(tmp);
-                    time6.Stop();
-                    var t6 = time6.Elapsed.TotalMilliseconds;
-                    dt.Rows.Add("2", "1", "3", t6);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("1", "2", "3", t);
                     break;
 
+                case 7:
+                    tmp = ex.CreateAscendentArray(ex.CreateRandomArray(10));
+                    ex.MergeSort(tmp);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("2", "1", "1", t);
+                    break;
+
+                case 8:
+                    tmp = ex.CreateAscendentArray(ex.CreateRandomArray(100));
+                    ex.MergeSort(tmp);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("2", "1", "2", t);
+                    break;
+
+                case 9:
+                    tmp = ex.CreateAscendentArray(ex.CreateRandomArray(1000));
+                    ex.MergeSort(tmp);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("2", "1", "3", t);
+                    break;
+
+                case 10:
+                    tmp = ex.CreateAscendentArray(ex.CreateRandomArray(10));
+                    ex.InsertionSort(tmp);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("2", "2", "1", t);
+                    break;
+
+                case 11:
+                    tmp = ex.CreateRandomArray(100);
+                    ex.InsertionSort(tmp);
+                    time.Stop();
+                     t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("2", "2", "2", t);
+                    break;
+
+                case 12:
+                    tmp = ex.CreateAscendentArray(ex.CreateRandomArray(1000));
+                    ex.InsertionSort(tmp);
+                    time.Stop();
+                    t = time.Elapsed.TotalMilliseconds;
+                    dt.Rows.Add("2", "2", "3", t);
+                    break;
 
             }
 
         }
 
-       
       
     }
 }

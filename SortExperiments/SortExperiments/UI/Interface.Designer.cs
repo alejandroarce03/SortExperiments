@@ -40,6 +40,10 @@ namespace SortExperiments.UI
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.report = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.report)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,7 +121,7 @@ namespace SortExperiments.UI
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(42, 295);
+            this.label7.Location = new System.Drawing.Point(42, 274);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 23);
             this.label7.TabIndex = 6;
@@ -159,17 +163,66 @@ namespace SortExperiments.UI
             // report
             // 
             this.report.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.report.Location = new System.Drawing.Point(415, 104);
+            this.report.Location = new System.Drawing.Point(526, 106);
             this.report.Name = "report";
-            this.report.Size = new System.Drawing.Size(437, 380);
+            this.report.Size = new System.Drawing.Size(437, 561);
             this.report.TabIndex = 10;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(42, 306);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(127, 23);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "2 Ascendent";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(42, 610);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(148, 23);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "2 Two Process";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Location = new System.Drawing.Point(42, 578);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(145, 23);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "1 One Process";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label14.Location = new System.Drawing.Point(39, 528);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(235, 39);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Procces Level";
             // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1013, 525);
+            this.ClientSize = new System.Drawing.Size(1013, 708);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.report);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -202,6 +255,10 @@ namespace SortExperiments.UI
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView report;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
 
