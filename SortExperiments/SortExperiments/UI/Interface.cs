@@ -60,7 +60,7 @@ namespace SortExperiments.UI
                 switch (value)
                 {
                     case 1:
-                        if (count[0] < 100)
+                        if (count[0] <= 120)
                         {
                             count[0]++;
                             Cases(value);
@@ -69,7 +69,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 2:
-                        if (count[1] < 100)
+                        if (count[1] <= 120)
                         {
                             count[1]++;
                             Cases(value);
@@ -78,7 +78,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 3:
-                        if (count[2] < 100)
+                        if (count[2] <= 120)
                         {
                             count[2]++;
                             Cases(value);
@@ -87,7 +87,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 4:
-                        if (count[3] < 100)
+                        if (count[3] <= 120)
                         {
                             count[3]++;
                             Cases(value);
@@ -96,7 +96,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 5:
-                        if (count[4] < 100)
+                        if (count[4] <= 120)
                         {
                             count[4]++;
                             Cases(value);
@@ -105,7 +105,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 6:
-                        if (count[5] < 100)
+                        if (count[5] <= 120)
                         {
                             count[5]++;
                             Cases(value);
@@ -114,7 +114,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 7:
-                        if (count[6] < 100)
+                        if (count[6] <= 120)
                         {
                             count[6]++;
                             Cases(value);
@@ -123,7 +123,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 8:
-                        if (count[7] < 100)
+                        if (count[7] <= 120)
                         {
                             count[7]++;
                             Cases(value);
@@ -132,7 +132,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 9:
-                        if (count[8] < 100)
+                        if (count[8] <= 120)
                         {
                             count[8]++;
                             Cases(value);
@@ -141,7 +141,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 10:
-                        if (count[9] < 100)
+                        if (count[9] <= 120)
                         {
                             count[9]++;
                             Cases(value);
@@ -150,7 +150,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 11:
-                        if (count[10] < 100)
+                        if (count[10] <= 120)
                         {
                             count[10]++;
                             Cases(value);
@@ -159,7 +159,7 @@ namespace SortExperiments.UI
                         break;
 
                     case 12:
-                        if (count[11] < 100)
+                        if (count[11] <= 120)
                         {
                             count[11]++;
                             Cases(value);
@@ -168,6 +168,7 @@ namespace SortExperiments.UI
                         break;
 
                 }
+                Console.WriteLine(repetition);
             }
         }
 
